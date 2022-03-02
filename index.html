@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Vacation</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Navbar  -->
+    <ul class="navbar" id="navbar">
+        <li class="nav-items" id="Home">Home</li>
+        <li class="nav-items" id="Experiences">Experiences</li>
+        <li class="nav-items" id="Foods">Foods</li>
+        <li class="nav-items" id="Stories">Stories</li>
+        <li class="nav-items" id="Places">Places</li>
+    </ul>
+    <!-- Welcome Section  -->
+<div id="welcome-section" class="welcome-section">
+    <h1>Welcome To Project Vacation</h1>
+    <h3>Click on either one to get started</h3>
+
+<div id="welcome-buttons" class="welcome-buttons">
+    <button class="btn" id="random-btn" class="isolate">Random</button>
+    <button class="btn" id="filter-btn">Filter</button>
+</div>
+</div>
+
+<!-- Filter Form  -->
+<div class="filter-form" id="filter-form">
+    <h1>Fill Out Form</h1>
+        <!-- People Selection  -->
+        <label for="cars">Who is going:</label>
+        <select id="cars" name="cars">
+          <option value="1">By myself</option>
+          <option value="2">Couple</option>
+          <option value="4">Group of Friends</option>
+          <option value="7">Family</option>
+        </select>
+        <!-- Budget -->
+    
+        <label for="budget">Budget:</label>
+        <input type="number" name="budget" id="budget">
+
+        <button id="budget-btn">Send</button>
+    
+</div>
+
+
+    <!-- Scripts -->
+    <script src="./navigate.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

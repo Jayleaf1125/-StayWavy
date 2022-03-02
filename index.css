@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-items {
+    list-style: none;
+}
+
+.welcome-section {
+    display: grid;
+    place-items: center;
+    margin-top: 10em;
+    border: 1px solid black;
+}
+
+.welcome-section .welcome-buttons {
+    display: flex;
+    margin-right: 2em;
+}
+
+.filter-form {
+    display: none;
+    margin-top: 2em;
+}
