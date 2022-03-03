@@ -34,3 +34,12 @@ function closeModal(modal) {
   modal.classList.remove('active')
   overlay.classList.remove('active')
 }
+
+function createModal(){
+  let newBtn = document.createElement('button')
+  // document.querySelector('button')
+  newBtn.setAttribute("data-modal-target","#modal");
+ console.log('newBtn')
+ document.body.append(newBtn)
+ 
+} 
