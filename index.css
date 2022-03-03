@@ -30,7 +30,8 @@ body {
 .input-form {
     padding: 1em;
     background-color: #C9D5B5;
-    color: #9F9F92;
+    color: #4E3D42;
+    font-weight: bold;
 }
 
 .submit-btn, .phoneticsBtn, .definition-page {

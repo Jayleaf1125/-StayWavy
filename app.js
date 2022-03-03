@@ -1,17 +1,19 @@
-window.addEventListener("DOMContentLoaded", (e) => {
-  const wordChoice = document.getElementById("wordChoice")
-  const wordChoice2 = document.getElementById("wordChoice2")
-  const wordChoice3 = document.getElementById("wordChoice3")
-  let injpartOfSpeech = document.getElementById("interjectivePartOfSpeech")
- let nounSpeech = document.getElementById("nounPartOfSpeech")
- let verbSpeech = document.getElementById("verbPartOfSpeech")
+  const wordChoice = document.getElementById("wordChoice");
+  const wordChoice2 = document.getElementById("wordChoice2");
+  const wordChoice3 = document.getElementById("wordChoice3");
+  let injpartOfSpeech = document.getElementById("interjectivePartOfSpeech");
+ let nounSpeech = document.getElementById("nounPartOfSpeech");
+ let verbSpeech = document.getElementById("verbPartOfSpeech");
 
-   let url = "https://api.dictionaryapi.dev/api/v2/entries/en/hello"
+   let url = "https://api.dictionaryapi.dev/api/v2/entries/en/hello";
+
+
    fetch(`${url}`)
    .then(response => response.json())
    .then((wordData) => {
-     console.log(wordData)
-     let word = wordData[0].word
+    //  console.log(wordData)
+     let word = wordData[0].word;
+    //  console.log(word)
      
      
      let noun = wordData[0].meanings[0].definitions[0].definition
@@ -51,9 +53,16 @@ window.addEventListener("DOMContentLoaded", (e) => {
      
      
      let sourceUrl = wordData[0].sourceUrls[0]
-   //   console.log(nounPartofSpeech)
+    //  console.log(nounPartofSpeech)
 
    });
 
-
-})
+   function createNewBtn() {
+     const newBtn = document.createElement("button");
+     newBtn.style.backgroundColor = "red";
+     newBtn.style.color = "white";
+     newBtn.style.padding = "10px";
+     newBtn.innerText = "Sayless, Click me"
+    //  console.log(newBtn)
+    document.body.append(newBtn)
+   }

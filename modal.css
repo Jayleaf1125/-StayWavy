@@ -89,3 +89,7 @@
   opacity: 1;
   pointer-events: all;
 }  
+
+ol {
+  list-style-type: upper-roman;
+}
