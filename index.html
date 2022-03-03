@@ -1,54 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StayWavy</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./modal.css">
 </head>
+
 <body>
     <!-- Opening Page -->
     <div id="opening-page" class="opening-page">
-        <h1 >StayWavy</h1>
-        <h3>Type in Word</h3>
-        <label for="input-form"></label>
-            <br>
-        <input type="text" id="input-form" name="input-form" id="wordChoice">
-            <br>
+        <h1 class="opening-heading">StayWavy</h1>
+
+        <label for="input-form" class="opening-subheading">Type in Word:</label>
+        <br>
+        <input type="text" id="input-form" name="input-form" class="input-form">
+        <br>
         <button id="submit-btn" class="submit-btn">Submit</button>
     </div>
 
     <!-- Word Information -->
     <div class="word-information" id="word-information">
         <h1 id="input-word"></h1>
-        <div id="phonetics-card" class="cards">
-            <h1>Definitions</h1>
-            <ul >
-                <li id="wordChoice"></li>
-                <li id="wordChoice2"></li>
-                <li id="wordChoice3"></li>
-            </ul>
+        <!-- Audio Modal -->
+        <button data-modal-target="#modal" class="wordInfo-modal">Audio Modal</button>
+        <div class="modal" id="modal">
+            <!-- unquie ID -->
+            <div class="modal-header">
+                <div class="title">Audio Modal</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni voluptatibus quia aliquid, quasi sed, id
+                omnis repellendus asperiores aperiam sunt eius, a et velit dolores.
+            </div>
         </div>
-        <div id="partOfSpeech-card" class="cards">
-            <h1>Part Of Speech</h1>
-            <ul>
-                <li id="interjectivePartOfSpeech"></li>
-                <li id="nounPartOfSpeech"></li>
-                <li id="verbPartOfSpeech"></li>
-            </ul>
-        </div>
+        <div id="overlay1"></div> <!-- unquie ID -->
+
+        <button id="definition-page" class="definition-page wordInfo-modal">Part of Speech</button>
     </div>
+    <!-- Definition Page -->
 
     <!-- Part Of Speech -->
-    <div id="speech" class="speech">
-        <button id="nouns" class="speech-buttons">Nouns</button>
-        <br>
-        <button id="adj" class="speech-buttons">Adjectives</button>
-        <br>
-        <button id="verbs" class="speech-buttons">Verbs</button>
+     <div id="speech" class="speech">
+
+         <!-- Example Modal  -->
+        <button data-modal-target="#modal2" class="wordInfo-modal">Audio Modal</button>
+        <div class="modal" id="modal2">
+        
+            <div class="modal-header">
+                <div class="title">Noun Modal</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni voluptatibus quia aliquid, quasi sed, id
+                omnis repellendus asperiores aperiam sunt eius, a et velit dolores.
+            </div>
+        </div> 
+        <div id="overlay2"></div> 
+        <!-- Nouns -->
+        <!-- Adjectives -->
+        <!-- Verbs -->
     </div>
+
+
     <script src="./navigate.js"></script>
     <script src="./app.js"></script>
+    <script src="./modal.js"></script>
 </body>
+
 </html>
