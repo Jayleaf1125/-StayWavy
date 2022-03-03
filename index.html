@@ -1,44 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StayWavy</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./modal.css">
 </head>
+
 <body>
     <!-- Opening Page -->
     <div id="opening-page" class="opening-page">
         <h1>StayWavy</h1>
         <h3>Type in Word</h3>
         <label for="input-form"></label>
-            <br>
+        <br>
         <input type="text" id="input-form" name="input-form">
-            <br>
+        <br>
         <button id="submit-btn" class="submit-btn">Submit</button>
     </div>
 
     <!-- Word Information -->
     <div class="word-information" id="word-information">
         <h1 id="input-word"></h1>
-        <div id="phonetics-card" class="cards">
-            <h1>Phonetics</h1>
-        </div>
-        <div id="partOfSpeech-card" class="cards">
-            <h1>Part Of Speech</h1>
-        </div>
-    </div>
 
-    <!-- Part Of Speech -->
-    <div id="speech" class="speech">
-        <button id="nouns" class="speech-buttons">Nouns</button>
-        <br>
-        <button id="adj" class="speech-buttons">Adjectives</button>
-        <br>
-        <button id="verbs" class="speech-buttons">Verbs</button>
-    </div>
-    <script src="./navigate.js"></script>
-    <script src="./app.js"></script>
+        <!-- Trigger/Open The Modal -->
+        <button id="phoneticsBtn">Open Modal</button>
+        <!-- The Modal -->
+        <div id="phoneticsModal" class="modal">
+            <!-- Phonetics Modal -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close" id="close">&times;</span>
+                    <h2>Phonetics Header</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the phonetics Body</p>
+                    <p>Some other text...</p>
+                </div>
+                <div class="modal-footer">
+                    <h3>Phonetics Footer</h3>
+                </div>
+            </div>
+        </div>
+        <!-- Definition Page -->
+        <button id="definition-page" class="definition-page">Part of Speech</button>
+
+        <!-- Part Of Speech -->
+        <div id="speech" class="speech">
+            <!-- Nouns -->
+            <h1>HELLO</h1>
+            <!-- Adjectives -->
+            <!-- Verbs -->
+        </div>
+        
+        <script src="./navigate.js"></script>
+        <script src="./modal.js"></script>
 </body>
+
 </html>

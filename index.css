@@ -9,4 +9,5 @@
 
 .speech {
     display: none;
+    border: 1px blue solid;
 }
