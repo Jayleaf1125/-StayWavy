@@ -1,20 +1,36 @@
-// Get the phonetics modal
-const modal = document.querySelector("#phoneticsModal");
-// Get the button that opens the modal
-const btn = document.querySelector("#phoneticsBtn");
-// Get the <span> element that closes the modal
-const span = document.querySelector("#close");
-// When the user clicks the button, open the modal 
-btn.addEventListener('click', openModal);
+const openModalButtons = document.querySelectorAll('[data-modal-target]')
+const closeModalButtons = document.querySelectorAll('[data-close-button]')
+// const overlay = document.getElementById('overlay1')
 
-function openModal() {
-    modal.style.display = "block";
+openModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget)
+    openModal(modal)
+  })
+})
+
+// overlay.addEventListener('click', () => {
+//   const modals = document.querySelectorAll('.modal.active')
+//   modals.forEach(modal => {
+//     closeModal(modal)
+//   })
+// })
+
+closeModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal')
+    closeModal(modal)
+  })
+})
+
+function openModal(modal) {
+  if (modal == null) return
+  modal.classList.add('active')
+  overlay.classList.add('active')
 }
-// When the user clicks on <span> (x), close the modal
-span.addEventListener('click', closeModal);
 
-function closeModal() {
-    modal.style.display = "none";
+function closeModal(modal) {
+  if (modal == null) return
+  modal.classList.remove('active')
+  overlay.classList.remove('active')
 }
-
-// Get Part of Speech Modal
