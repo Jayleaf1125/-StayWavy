@@ -1,25 +1,16 @@
-// DOM Elements
-const randomBtn = document.querySelector(`#random-btn`);
-const filterBtn = document.querySelector(`#filter-btn`);
-const welcomeSection = document.querySelector(`#welcome-section`);
-const filterForm = document.querySelector(`#filter-form`);
-const budgetBtn = document.querySelector(`#budget-btn`);
-const budget = document.querySelector(`#budget`);
+const inputForm = document.querySelector(`#input-form`);
+const inputBtn = document.querySelector(`#submit-btn`);
+const openingPageSection = document.querySelector(`#opening-page`);
+const wordInfoSection = document.querySelector(`#word-information`);
+const speechSection = document.querySelector(`#speech`);
+const choosenWord = document.querySelector(`#input-word`)
 
-// Filter Form
-filterBtn.addEventListener('click', switchOverToFilterForm);
+inputBtn.addEventListener('click', handleInputForm)
 
-function switchOverToFilterForm() {
-    welcomeSection.style.display = "none";
-    filterForm.style.display = "block";
-}
-
-budgetBtn.addEventListener('click', getBudgetValue);
-
-function getBudgetValue() {
-    const value = budget.value;
-   console.log(+value)
-
-    filterForm.style.display = "none";
-
+function handleInputForm() {
+    const value = inputForm.value;
+    console.log(value)
+    openingPageSection.style.display = 'none';
+    wordInfoSection.style.display = 'block'
+    choosenWord.innerText = `${value}`
 }

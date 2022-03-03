@@ -1,25 +1,12 @@
-.navbar {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.nav-items {
-    list-style: none;
-}
-
-.welcome-section {
+.opening-page {
     display: grid;
-    place-items: center;
-    margin-top: 10em;
-    border: 1px solid black;
+    place-content: center;
 }
 
-.welcome-section .welcome-buttons {
-    display: flex;
-    margin-right: 2em;
-}
-
-.filter-form {
+.word-information {
     display: none;
-    margin-top: 2em;
+}
+
+.speech {
+    display: none;
 }
