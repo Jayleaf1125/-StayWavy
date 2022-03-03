@@ -5,7 +5,8 @@ const welcomeSection = document.querySelector(`#welcome-section`);
 const filterForm = document.querySelector(`#filter-form`);
 const locationBtn = document.querySelector(`#location-btn`);
 const search = document.querySelector(`#search`);
-const locationForm = document.querySelector(`#location-form`)
+const locationForm = document.querySelector(`#location-form`);
+const groupDiv = document.querySelector(`#group-group`);
 
 // Filter Form
 selectBtn.addEventListener('click', switchOverToFilterForm);
@@ -30,5 +31,6 @@ function getBudgetValue() {
    console.log(value)
 
     locationForm.style.display = "none";
+    groupDiv.style.display = "flex"
 
 }
