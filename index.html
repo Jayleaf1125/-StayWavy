@@ -5,91 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StayWavy</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <!-- Navbar  -->
-    <ul class="navbar" id="navbar">
-        <a href="#home-group" class="nav-items"><li class="nav-items" id="Home">Home</li></a>
-        <a href="#city-group" class="nav-items"><li class="nav-items">City</li></a>
-        <a href="#hotel-group" class="nav-items"><li class="nav-items">Hotel</li></a>
-        <a href="#landmark-group" class="nav-items"><li class="nav-items">Landmark</li></a>
-        <a href="#transport-group" class="nav-items"><li class="nav-items">Transport</li></a>
-    </ul>
-    <!-- Welcome Section  -->
-<div id="welcome-section" class="welcome-section">
-    <h1 class="welcome-heading">Welcome To StayWavy</h1>
-    <h3 class="welcome-subheading">Click on either one to get started</h3>
+    <!-- Opening Page -->
+    <div id="opening-page" class="opening-page">
+        <h1>StayWavy</h1>
+        <h3>Type in Word</h3>
+        <label for="input-form"></label>
+            <br>
+        <input type="text" id="input-form" name="input-form">
+            <br>
+        <button id="submit-btn" class="submit-btn">Submit</button>
+    </div>
 
-<div id="welcome-buttons" class="welcome-buttons">
-    <button class="btn" id="random-btn" class="isolate">Random</button>
-    <button class="btn" id="select-btn">Selected</button>
-</div>
-</div>
+    <!-- Word Information -->
+    <div class="word-information" id="word-information">
+        <h1 id="input-word"></h1>
+        <div id="phonetics-card" class="cards">
+            <h1>Phonetics</h1>
+        </div>
+        <div id="partOfSpeech-card" class="cards">
+            <h1>Part Of Speech</h1>
+        </div>
+    </div>
 
-<!-- Filter Form 
-<div class="filter-form" id="filter-form">
-    <h1>Fill Out Form</h1>
-        < People Selection  
-        <label for="cars">Who is going:</label>
-        <select id="cars" name="cars">
-          <option value="1">By myself</option>
-          <option value="2">Couple</option>
-          <option value="4">Group of Friends</option>
-          <option value="7">Family</option>
-        </select> -->
-        <!-- Budget 
-    
-        <label for="budget">Budget:</label>
-        <input type="number" name="budget" id="budget">
-
-        <button id="budget-btn">Send</button> -->
-    
-<!-- </div>  -->
-
-<!-- Manually picking your location -->
-<div id="location-form" class="location-form">
-  <label for="search">Type your desire destination:</label><br>
-  <input type="text" id="search" name="search" autocomplete="off">
-  <button id="location-btn" class="location-btn">Click Here</button>
-</div>
-
-
-<!-- New York Will be our placeholder -->
-<!-- City Group -->
-<div class="group-group" id="group-group">
-
-<div id="home-group" class="group home">
-    <h1>Country: United States</h1>
-    <h3>State: New York</h3>
-</div>
-
-<div id="city-group" class="group">
-   <p> sit amet consectetur adipisicing elit. Neque, libero quae molestiae consequatur dolores reprehenderit ratione. Ea, magni? Ut vitae dolores aperiam voluptate quibusdam dolorem magnam ad. Assumenda sit quasi harum laboriosam eius quibusdam nisi dolor placeat debitis magni reiciendis neque, ipsam praesentium eos ratione soluta, eaque atque. Earum in, tenetur recusandae ad perspiciatis provident natus corrupti quisquam deleniti laboriosam eveniet commodi qui modi ducimus asperiores autem dolore. Ad, quo. Perspiciatis blanditiis ad accusamus rem.</p>
-</div>
-
-<!-- Hotel Group -->
-<div id="hotel-group" class="group">
-    <p> sit amet consectetur adipisicing elit. Neque, libero quae molestiae consequatur dolores reprehenderit ratione. Ea, magni? Ut vitae dolores aperiam voluptate quibusdam dolorem magnam ad. Assumenda sit quasi harum laboriosam eius quibusdam nisi dolor placeat debitis magni reiciendis neque, ipsam praesentium eos ratione soluta, eaque atque. Earum in, tenetur recusandae ad perspiciatis provident natus corrupti quisquam deleniti laboriosam eveniet commodi qui modi ducimus asperiores autem dolore. Ad, quo. Perspiciatis blanditiis ad accusamus rem.</p>
-</div>
-
-<!-- Landmark Group -->
-<div id="landmark-group" class="group">
-    <p> sit amet consectetur adipisicing elit. Neque, libero quae molestiae consequatur dolores reprehenderit ratione. Ea, magni? Ut vitae dolores aperiam voluptate quibusdam dolorem magnam ad. Assumenda sit quasi harum laboriosam eius quibusdam nisi dolor placeat debitis magni reiciendis neque, ipsam praesentium eos ratione soluta, eaque atque. Earum in, tenetur recusandae ad perspiciatis provident natus corrupti quisquam deleniti laboriosam eveniet commodi qui modi ducimus asperiores autem dolore. Ad, quo. Perspiciatis blanditiis ad accusamus rem.</p>
-</div>
-
-<!-- Transport Group -->
-<div id="transport-group" class="group">
-    <p> sit amet consectetur adipisicing elit. Neque, libero quae molestiae consequatur dolores reprehenderit ratione. Ea, magni? Ut vitae dolores aperiam voluptate quibusdam dolorem magnam ad. Assumenda sit quasi harum laboriosam eius quibusdam nisi dolor placeat debitis magni reiciendis neque, ipsam praesentium eos ratione soluta, eaque atque. Earum in, tenetur recusandae ad perspiciatis provident natus corrupti quisquam deleniti laboriosam eveniet commodi qui modi ducimus asperiores autem dolore. Ad, quo. Perspiciatis blanditiis ad accusamus rem.</p>
-</div>
-</div>
-
-
-
-    <!-- Scripts -->
+    <!-- Part Of Speech -->
+    <div id="speech" class="speech">
+        <button id="nouns" class="speech-buttons">Nouns</button>
+        <br>
+        <button id="adj" class="speech-buttons">Adjectives</button>
+        <br>
+        <button id="verbs" class="speech-buttons">Verbs</button>
+    </div>
     <script src="./navigate.js"></script>
-    <!-- <script src="./data.js"></script> -->
     <script src="./app.js"></script>
 </body>
 </html>

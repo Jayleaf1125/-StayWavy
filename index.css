@@ -1,59 +1,12 @@
-* { margin: 0; padding: 0; }
-
-body {
-    background-color: #9F9F92;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #C4C4C4;
-    padding: 25px;
-}
-
-.nav-items {
-    list-style: none;
-    text-decoration: none;
-    color: #000;
-    font-size: 1.2em;
-}
-
-.welcome-section {
+.opening-page {
     display: grid;
-    place-items: center;
-    margin-top: 10em;
+    place-content: center;
 }
 
-.welcome-section .welcome-buttons {
-    display: flex;
-    margin-right: 2em;
-}
-
-.welcome-heading, .welcome-subheading, .btn {
-    margin-top: 3em;
-}
-
-/* .filter-form {
+.word-information {
     display: none;
-    margin-top: 2em;
-} */
+}
 
-.location-form {
+.speech {
     display: none;
-    place-items: center;
-    margin-top: 10em;
-    border: 1px solid black;
-}
-
-.group {
-    margin-top: 5em;
-}
-
-.group-group {
-    display: none;
-    flex-direction: column;
-}
-
-.home {
-    text-align: center;
 }

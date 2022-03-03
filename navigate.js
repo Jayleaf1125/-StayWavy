@@ -1,44 +1,16 @@
-// // DOM Elements
-// const randomBtn = document.querySelector(`#random-btn`);
-// const selectBtn = document.querySelector(`#select-btn`);
-// const welcomeSection = document.querySelector(`#welcome-section`);
-// const filterForm = document.querySelector(`#filter-form`);
-// const locationBtn = document.querySelector(`#location-btn`);
-// const search = document.querySelector(`#search`);
-// const locationForm = document.querySelector(`#location-form`);
-// const groupDiv = document.querySelector(`#group-group`);
+const inputForm = document.querySelector(`#input-form`);
+const inputBtn = document.querySelector(`#submit-btn`);
+const openingPageSection = document.querySelector(`#opening-page`);
+const wordInfoSection = document.querySelector(`#word-information`);
+const speechSection = document.querySelector(`#speech`);
+const choosenWord = document.querySelector(`#input-word`)
 
-// // Filter Form
-// selectBtn.addEventListener('click', switchOverToFilterForm);
+inputBtn.addEventListener('click', handleInputForm)
 
-// function switchOverToFilterForm() {
-//     welcomeSection.style.display = "none";
-//     locationForm.style.display = "grid";
-// }
-
-// locationBtn.addEventListener('click', getBudgetValue);
-
-// // function getBudgetValue() {
-// //     const value = budget.value;
-// //    console.log(+value)
-
-// //     filterForm.style.display = "none";
-
-// // }
-
-// function getBudgetValue() {
-//     const value = search.value;
-//    console.log(value)
-
-//     locationForm.style.display = "none";
-//     groupDiv.style.display = "flex"
-
-// }
-
-fetch("https://pokeapi.co/api/v2/pokemon")
-.then(response => response.json()) 
-.then(data => {
-   data.results.forEach(element => {
-       console.log(element)
-   });
-})
+function handleInputForm() {
+    const value = inputForm.value;
+    console.log(value)
+    openingPageSection.style.display = 'none';
+    wordInfoSection.style.display = 'block'
+    choosenWord.innerText = `${value}`
+}
