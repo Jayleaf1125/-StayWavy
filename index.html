@@ -10,11 +10,11 @@
 <body>
     <!-- Opening Page -->
     <div id="opening-page" class="opening-page">
-        <h1>StayWavy</h1>
+        <h1 >StayWavy</h1>
         <h3>Type in Word</h3>
         <label for="input-form"></label>
             <br>
-        <input type="text" id="input-form" name="input-form">
+        <input type="text" id="input-form" name="input-form" id="wordChoice">
             <br>
         <button id="submit-btn" class="submit-btn">Submit</button>
     </div>
@@ -23,10 +23,20 @@
     <div class="word-information" id="word-information">
         <h1 id="input-word"></h1>
         <div id="phonetics-card" class="cards">
-            <h1>Phonetics</h1>
+            <h1>Definitions</h1>
+            <ul >
+                <li id="wordChoice"></li>
+                <li id="wordChoice2"></li>
+                <li id="wordChoice3"></li>
+            </ul>
         </div>
         <div id="partOfSpeech-card" class="cards">
             <h1>Part Of Speech</h1>
+            <ul>
+                <li id="interjectivePartOfSpeech"></li>
+                <li id="nounPartOfSpeech"></li>
+                <li id="verbPartOfSpeech"></li>
+            </ul>
         </div>
     </div>
 
