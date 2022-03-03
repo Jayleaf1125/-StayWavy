@@ -12,10 +12,10 @@
     <!-- Navbar  -->
     <ul class="navbar" id="navbar">
         <li class="nav-items" id="Home">Home</li>
-        <li class="nav-items" id="Experiences">Experiences</li>
-        <li class="nav-items" id="Foods">Foods</li>
-        <li class="nav-items" id="Stories">Stories</li>
-        <li class="nav-items" id="Places">Places</li>
+        <li class="nav-items" id="Experiences">City</li>
+        <li class="nav-items" id="Foods">Hotel</li>
+        <li class="nav-items" id="Stories">Landmark</li>
+        <li class="nav-items" id="Places">Transport</li>
     </ul>
     <!-- Welcome Section  -->
 <div id="welcome-section" class="welcome-section">
@@ -24,33 +24,45 @@
 
 <div id="welcome-buttons" class="welcome-buttons">
     <button class="btn" id="random-btn" class="isolate">Random</button>
-    <button class="btn" id="filter-btn">Filter</button>
+    <button class="btn" id="select-btn">Selected</button>
 </div>
 </div>
 
-<!-- Filter Form  -->
+<!-- Filter Form 
 <div class="filter-form" id="filter-form">
     <h1>Fill Out Form</h1>
-        <!-- People Selection  -->
+        < People Selection  
         <label for="cars">Who is going:</label>
         <select id="cars" name="cars">
           <option value="1">By myself</option>
           <option value="2">Couple</option>
           <option value="4">Group of Friends</option>
           <option value="7">Family</option>
-        </select>
-        <!-- Budget -->
+        </select> -->
+        <!-- Budget 
     
         <label for="budget">Budget:</label>
         <input type="number" name="budget" id="budget">
 
-        <button id="budget-btn">Send</button>
+        <button id="budget-btn">Send</button> -->
     
+<!-- </div>  -->
+
+<!-- Manually picking your location -->
+<div id="location-form" class="location-form">
+  <label for="search">Type your desire destination:</label><br>
+  <input type="text" id="search" name="search" autocomplete="off">
+  <button id="location-btn" class="location-btn">Click Here</button>
 </div>
+
+<!-- City Group -->
+
+
 
 
     <!-- Scripts -->
     <script src="./navigate.js"></script>
+    <!-- <script src="./data.js"></script> -->
     <script src="./app.js"></script>
 </body>
 </html>

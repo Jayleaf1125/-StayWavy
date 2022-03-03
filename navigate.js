@@ -1,25 +1,34 @@
 // DOM Elements
 const randomBtn = document.querySelector(`#random-btn`);
-const filterBtn = document.querySelector(`#filter-btn`);
+const selectBtn = document.querySelector(`#select-btn`);
 const welcomeSection = document.querySelector(`#welcome-section`);
 const filterForm = document.querySelector(`#filter-form`);
-const budgetBtn = document.querySelector(`#budget-btn`);
-const budget = document.querySelector(`#budget`);
+const locationBtn = document.querySelector(`#location-btn`);
+const search = document.querySelector(`#search`);
+const locationForm = document.querySelector(`#location-form`)
 
 // Filter Form
-filterBtn.addEventListener('click', switchOverToFilterForm);
+selectBtn.addEventListener('click', switchOverToFilterForm);
 
 function switchOverToFilterForm() {
     welcomeSection.style.display = "none";
-    filterForm.style.display = "block";
+    locationForm.style.display = "grid";
 }
 
-budgetBtn.addEventListener('click', getBudgetValue);
+locationBtn.addEventListener('click', getBudgetValue);
+
+// function getBudgetValue() {
+//     const value = budget.value;
+//    console.log(+value)
+
+//     filterForm.style.display = "none";
+
+// }
 
 function getBudgetValue() {
-    const value = budget.value;
-   console.log(+value)
+    const value = search.value;
+   console.log(value)
 
-    filterForm.style.display = "none";
+    locationForm.style.display = "none";
 
 }
