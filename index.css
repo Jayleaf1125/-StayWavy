@@ -19,7 +19,14 @@
     margin-right: 2em;
 }
 
-.filter-form {
+/* .filter-form {
     display: none;
     margin-top: 2em;
+} */
+
+.location-form {
+    display: none;
+    place-items: center;
+    margin-top: 10em;
+    border: 1px solid black;
 }
