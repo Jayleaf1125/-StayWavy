@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="http://fonts.cdnfonts.com/css/sf-distant-galaxy-altoutline" rel="stylesheet">
+  <link href="http://fonts.cdnfonts.com/css/panamera" rel="stylesheet">
     <link rel="stylesheet" href="./changeTailWind.css">
     <title>Document</title>
 </head>
@@ -16,7 +22,7 @@
     <div class="flex justify-center p-8 items-center">
     <input
     type="text"
-    placeholder="Enter the word"
+    placeholder="Enter the word you want to know"
     id="word"
     class="
     py-2
@@ -34,7 +40,7 @@
     </button>
     </div>
     <div class="flex flex-col justify-center items-center">
-    <div id="partOfSpeechDiv" class="hidden">
+    <div id="partOfSpeechDiv" class="hidden removeBox">
     <h2 class="text-xl text-gray-500 py-2" id="partOfSpeechHeader"></h2>
     <p class="text-md" id="partOfSpeechPara"></p>
     </div>
