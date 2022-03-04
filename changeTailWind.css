@@ -112,3 +112,12 @@ h2.text-green-600 {
       opacity: 1;
     }
   }
+
+  .text-white:hover {
+    color: #857a7d;
+    font-style: italic;
+}
+
+.isolate:hover {
+    background-color: #b7b7ae;
+}
